@@ -16,32 +16,23 @@
           <li class="menu-item"><a href="">гарантия</a></li>
           <li class="menu-item"><a href="">контакты</a></li>
         </ul>
-        <form class="search-text" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually hidden" for="search-text">Поиск по сайту</label>
-            <input id="search-text" type="text" name="search-text" value="" placeholder="Поиск по сайту">
-          </p>
-        </form>
-        <ul class="user-navigation">
-          <li class="user-name">
-            <a href="">Валентин Петухов</a>
-          </li>
-          <li class="login-link">
-            <h3 class="visually hidden">Выйти из личного кабинета</h3>
-            <a href="">Выйти</a>
-          </li>
-        </ul>
-        <ul class="comparison-goods">
-          <li class="comparison-option">
-            <a href="">Сравнить</a>
-          </li>
-        </ul>
-        <ul class="basket-goods">
-          <li class="basket-option">
-            <a href="">Корзина</a>
-          </li>
-        </ul>
       </nav>
+      <form class="search-text" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually hidden" for="search-text">Поиск по сайту</label>
+            <input id="search-text" type="text" name="search-text" value="" placeholder="Поиск по сайту">
+        </p>
+      </form>
+      <ul class="autorisation">
+        <li>
+          <a href="" title="Имя пользователя">Валентин Петухов</a>
+        </li>
+        <li>
+          <a href="" title="Выйти из личного кабинета">Выйти</a>
+        </li>
+      </ul>
+      <a class="comparison" href="" title="Сравнение товаров">Сравнить</a>
+      <a class="basket" href="" title="Просмотр корзины покупателя">Корзина</a>
     </header>
     <main class="container">
       <aside class="filter-condition">
@@ -108,65 +99,37 @@
         <ul class="product-list">
           <li>
             <a href="">
-              <h3>
-                Любительская селфи-палка
-              </h3>
               <img src="./img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <h3 title="Наименование товара">Любительская селфи-палка</h3>
             </a>
-            <dl>
-              <dt>Любительская селфи-палка</dt>
-              <dd>
-                <a class="product-to-basket" href="">500 руб.</a>
-              </dd>
-            </dl>
+            <span title="Цена">500 руб.</span>
           </li>
           <li>
             <a href="">
-              <h3>
-                Профессиональная селфи-палка
-              </h3>
               <img src="./img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <h3 title="Наименование товара">Профессиональная селфи-палка</h3>
             </a>
-            <dl>
-              <dt>Профессиональная селфи-палка</dt>
-              <dd>
-                <a class="product-to-basket" href="">1 500 руб.</a>
-              </dd>
-            </dl>
+            <span title="Цена">1 500 руб.</span>
           </li>
           <li>
             <a href="">
-              <h3>
-                Непотопляемая селфи-палка
-              </h3>
               <img src="./img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <h3 title="Наименование товара">Непотопляемая селфи-палка</h3>
             </a>
-            <dl>
-              <dt>Непотопляемая селфи-палка</dt>
-              <dd>
-                <a class="product-to-basket" href="">2 500 руб.</a>
-              </dd>
-            </dl>
+            <span title="Цена">2 500 руб.</span>
           </li>
           <li>
             <a href="">
-              <h3>
-                Селфи-палка «Следуй за мной»
-              </h3>
               <img src="./img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <h3 title="Наименование товара">Селфи-палка «Следуй за мной»</h3>
             </a>
-            <dl>
-              <dt>Селфи-палка «Следуй за мной»</dt>
-              <dd>
-                <a class="product-to-basket" href="">4 900 руб.</a>
-              </dd>
-            </dl>
+            <span title="Цена">4 900 руб.</span>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
-      <nav class="footer-navigation">
+      <div class="footer-navigation">
         <a class="main-footer-logo" href="./index.html">
           <img src="./img/logo-footer.svg" width="162" height="35" alt="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
         </a>
@@ -175,23 +138,17 @@
           <li class="menu-item"><a href="">гарантия</a></li>
           <li class="menu-item"><a href="">контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="user-name">
-            <a href="">Валентин Петухов</a>
-          </li>
-          <li class="login-link"><a href="">Выйти</a></li>
-        </ul>
-        <ul class="comparison-goods">
-          <li class="comparison-option">
-            <a href="">Сравнить</a>
-          </li>
-        </ul>
-        <ul class="basket-goods">
-          <li class="basket-option">
-            <a href="">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
+      <ul class="autorisation">
+        <li>
+          <a href="" title="Имя пользователя">Валентин Петухов</a>
+        </li>
+        <li>
+          <a href="" title="Выйти из личного кабинета">Выйти</a>
+        </li>
+      </ul>
+      <a class="comparison" href="" title="Сравнение товаров">Сравнить</a>
+      <a class="basket" href="" title="Просмотр корзины покупателя">Корзина</a>
       <div class="address">
         <h3 class="visually-hidden">Наш адрес:</h3>
         <p >г. Москва, ул. Строителей, 15</p>
