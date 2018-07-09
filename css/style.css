@@ -94,6 +94,9 @@ ul {
   color: #000000;
 }
 
+#search-text {
+  display: none;
+}
 .search-text {
   opacity: 0.3;
 }
@@ -239,7 +242,23 @@ color: #000000;
   padding-right: 40px;
 }
 
-.site-navigation {
-  display: flex;
+  .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-}
+
+  .site-navigation li:nth-child(3n-1) {
+    position: relative;
+    left: 300px;
+  }
+
+  .site-navigation li:nth-child(3n) {
+    position: relative;
+    left: 400px;
+  }
+  .site-navigation li:nth-child(3n+1) !li:first-child {
+    position: relative;
+    left: 500px;
+  }
