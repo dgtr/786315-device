@@ -68,7 +68,7 @@ ul {
     width: 100%;
 }
 
-.main-navigation {
+.site-navigation {
     font-family: "gilroyextrabold", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -287,4 +287,14 @@ ul {
 .main-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.container {
+  display: flex;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

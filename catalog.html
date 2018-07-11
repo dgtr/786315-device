@@ -9,23 +9,16 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="./index.html">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
-        </a>
-        <ul class="site-navigation">
-          <li class="catalog-goods"><a href="">каталог товаров</a></li>
-          <li class="menu-item"><a href="">доставка</a></li>
-          <li class="menu-item"><a href="">гарантия</a></li>
-          <li class="menu-item"><a href="">контакты</a></li>
-        </ul>
-      </nav>
-      <form class="search-text" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually hidden" for="search-text">Поиск по сайту</label>
+      <a class="logo" href="./index.html" aria-label="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
+      </a>
+      <div class="additional-navigation-wrapper">
+        <form class="search-text" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="search" for="search-text">Поиск по сайту</label>
             <input id="search-text" type="text" name="search-text" value="" placeholder="Поиск по сайту">
-        </p>
-      </form>
+          </p>
+        </form>
       <ul class="autorisation">
         <li>
           <a href="" aria-label="Имя пользователя">Валентин Петухов</a>
@@ -34,8 +27,25 @@
           <a href="" aria-label="Выйти из личного кабинета">Выйти</a>
         </li>
       </ul>
-      <a class="comparison" href="" aria-label="Сравнение товаров">Сравнить</a>
-      <a class="basket" href="" aria-label="Просмотр корзины покупателя">Корзина</a>
+      <ul class="user-options">
+        <li>
+          <a class="comparison" href="" aria-label="Сравнение товаров">Сравнить</a>
+        </li>
+        <li>
+          <a class="basket" href="" aria-label="Просмотр корзины покупателя">Корзина</a>
+        </li>
+      </ul>
+    </div>
+      <nav class="main-navigation">
+        <div class="catalog-goods">
+          <a href="./catalog.html">каталог товаров</a>
+        </div>
+        <ul class="site-navigation">
+          <li class="menu-item"><a href="">доставка</a></li>
+          <li class="menu-item"><a href="">гарантия</a></li>
+          <li class="menu-item"><a href="">контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <aside class="filter-condition">
@@ -132,16 +142,34 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-navigation">
-        <a class="main-footer-logo" href="./index.html">
+      <div class="footer-columnwrapper-1">
+        <a class="logo" href="./index.html">
           <img src="./img/logo-footer.svg" width="162" height="35" alt="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
         </a>
+        <div class="address">
+          <h3 class="visually-hidden">Наш адрес:</h3>
+          <p>г. Москва, ул. Строителей, 15</p>
+        </div>
+      </div>
+      <div class="footer-columnwrapper-2">
         <ul class="site-navigation">
           <li class="menu-item"><a href="">доставка</a></li>
           <li class="menu-item"><a href="">гарантия</a></li>
           <li class="menu-item"><a href="">контакты</a></li>
         </ul>
+        <div class="footer-social">
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Фэйсбук</span>
+          </a>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </div>
       </div>
+      <div class="footer-columnwrapper-3">
       <ul class="autorisation">
         <li>
           <a href="" aria-label="Имя пользователя">Валентин Петухов</a>
@@ -150,32 +178,24 @@
           <a href="" aria-label="Выйти из личного кабинета">Выйти</a>
         </li>
       </ul>
-      <a class="comparison" href="" aria-label="Сравнение товаров">Сравнить</a>
-      <a class="basket" href="" aria-label="Просмотр корзины покупателя">Корзина</a>
-      <div class="address">
-        <h3 class="visually-hidden">Наш адрес:</h3>
-        <p >г. Москва, ул. Строителей, 15</p>
-      </div>
+      <ul class="user-options">
+        <li>
+          <a class="comparison" href="" aria-label="Сравнение товаров">Сравнить</a>
+        </li>
+        <li>
+          <a class="basket" href="" aria-label="Просмотр корзины покупателя">Корзина</a>
+        </li>
+      </ul>
       <div class="phone">
-        <h3 class="visually-hidden">Наш телефон:</h3>
+        <h3 class="visually-hidden">Наш телефон</h3>
         <p>Тел.: +7 (495) 495-95-95</p>
-      </div>
-      <div class="footer-social">
-        <a class="social-button" href="#">
-          <span class="visually-hidden">Фэйсбук</span>
-        </a>
-        <a class="social-button" href="#">
-          <span class="visually-hidden">Инстаграм</span>
-        </a>
-        <a class="social-button" href="#">
-          <span class="visually-hidden">Твиттер</span>
-        </a>
       </div>
       <div class="logo-html">
         <a href="">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>
