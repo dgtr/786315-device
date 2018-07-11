@@ -8,8 +8,8 @@
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2'),
-         url('gilroylight-webfont.woff') format('woff');
+    src: url('../gilroylight-webfont.woff2') format('woff2'),
+         url('../gilroylight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -282,5 +282,9 @@ ul {
 
 .info-about {
   display: flex;
+}
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
 }
