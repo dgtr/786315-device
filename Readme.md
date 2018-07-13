@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Вадим Дегтярев](https://up.htmlacademy.ru/htmlcss/21/user/786315).
-* Наставник: [Мурат Баркинхоев] (https://htmlacademy.ru/profile/id186857).  
+* Наставник: [нна Лисененкова] (https://htmlacademy.ru/profile/ankhena).  
 
 ---
 
