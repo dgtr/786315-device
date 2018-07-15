@@ -128,13 +128,14 @@ ul {
 
 }
 
-.site-navigation {
+.main-navigation {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   font-family: "gilroyextrabold", sans-serif;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .logo {
@@ -167,6 +168,7 @@ ul {
   line-height: 30px;
   font-family: "Open Sans", sans-serif;
   color: #000000;
+  letter-spacing: 0.5px;
 }
 
 #search-text {
@@ -298,23 +300,28 @@ ul {
 
 .additional-navigation-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin-top: 17px;
 }
 
 .search-text {
-  margin-left: 80px;
+  margin-left: 48px;
 }
 
-/* .autorisation {
+.autorisation {
+  margin: 0;
+  padding: 0;
   display: flex;
-  width: 260px;
-} */
+  width: 282px;
+}
 
 .user-options {
   display: flex;
+  justify-content: flex-start;
   width: 220px;
+  margin: 0;
 }
 
 .user-options li {
@@ -322,16 +329,17 @@ ul {
 }
 
 .search-text {
-  width: 500px;
+  width: 489px;
   padding-right: 40px;
 }
 
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  width: 1040px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .catalog-goods a,
@@ -351,8 +359,8 @@ ul {
 .search::before {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 24px;
+  top: 4px;
+  left: 16px;
 
   width: 20px;
   height: 20px;
@@ -360,6 +368,7 @@ ul {
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 1;
 }
 
 
@@ -423,22 +432,21 @@ ul {
 }
 
 .catalog-goods {
-  margin-left: 80px;
+  margin-left: 50px;
+  width: 550px;
 }
 
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 600px;
+  width: 560px;
+  margin: 0;
+  padding: 0;
 }
 
-.site-navigation li:first-child {
-  margin: 0 40px;
-}
 .site-navigation li:last-child {
-  margin-right: 60px;
-  margin-left: auto;
+  margin-left: 87px;
 }
 
 .info-about {
