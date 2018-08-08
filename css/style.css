@@ -62,16 +62,20 @@ img {
 }
 
 .main-footer {
+  background-color: #464646;
+}
+
+.footer-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
+  padding-top: 66px;
 
   color: #ffffff;
-
-  background-color: #464646;
 }
 
 
@@ -139,7 +143,7 @@ ul {
   letter-spacing: 4px;
 }
 
-.logo {
+.main-header .logo {
   position: relative;
   bottom: 19px;
 
@@ -206,6 +210,7 @@ ul {
 }
 
 .info-about a.button {
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -302,7 +307,7 @@ ul {
   padding: 0;
 }
 
-.site-navigation li:first-child {
+.main-navigation .site-navigation li:first-child {
   min-width: 160px;
   padding-left: 20px;
 }
@@ -433,7 +438,7 @@ ul {
 }
 
 
-.site-navigation {
+.main-navigation .site-navigation {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
@@ -441,7 +446,7 @@ ul {
   padding: 0;
 }
 
-.site-navigation li:last-child {
+.main-navigation .site-navigation li:last-child {
   margin-left: auto;
 }
 
@@ -450,7 +455,6 @@ ul {
 .info-about {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid red;
   width: 1160px;
 
 
@@ -469,12 +473,10 @@ ul {
 }
 
 .about {
-  outline: 1px solid green;
   width: 474px;
 }
 
 .contacts {
-  outline: 1px solid blue;
   width: 560px;
 }
 
@@ -504,10 +506,12 @@ ul {
 
 .office-map {
   margin: 0;
+  margin-bottom: 75px;
 }
 
 .about ul {
   margin-top: 66px;
+  margin-bottom: 62px;
 }
 
 .about li {
@@ -541,8 +545,15 @@ ul {
   font-family: "gilroyextrabold", sans-serif;
   color: #000000;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 4px;
+  display: block;
+  margin-bottom: 90px;
+  margin-left: 23px;
+}
 
+  .info-about .contacts .button {
+    margin-left: 43px;
 
 
 }
@@ -550,12 +561,23 @@ ul {
 .info-about .button::before {
   content: "";
   position: absolute;
-  top: 18px;
-  left: -38px;
+  top: 8px;
+  left: -23px;
+  z-index: -1;
 
   width: 260px;
   height: 8px;
 
   background-color: #f0c52e;
 
+}
+
+.info-about .contacts .button::before {
+  left: -43px;
+
+}
+
+.footer-rowwrapper-1 {
+  display: flex;
+  justify-content: flex-end;
 }
