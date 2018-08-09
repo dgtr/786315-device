@@ -652,6 +652,7 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 52px;
+  margin-bottom: 65px;
 }
 
 .footer-social {
