@@ -303,6 +303,7 @@ ul {
 
 .autorisation {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -361,9 +362,12 @@ ul {
 
 .autorisation .login-link {
   position: relative;
-
   padding-left: 50px;
 }
+.autorisation li:last-child {
+  padding-left: 40px;
+}
+
 
 .login-link::before {
   content: "";
@@ -621,6 +625,10 @@ ul {
   margin-left: 75px;
 }
 
+.footer-social a {
+  display: block;
+}
+
 .social-button-facebook {
   background-image: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path fill='#FFF' d='M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z'/></svg>");
   background-repeat: no-repeat;
@@ -650,7 +658,7 @@ ul {
 
 .footer-rowwrapper-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 52px;
   margin-bottom: 65px;
 }
@@ -659,6 +667,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .footer-social li {
@@ -672,14 +681,19 @@ ul {
   background-position: 0 0;
   width: 27px;
   height: 35px;
+  margin-left: 462px;
 
 
 }
 
-.footer-graphik-element {
+.footer-social::before {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  align-self: center;
+  content: "";
+position: absolute;
+top: 14px;
+left: -514px;
+
 
 }
