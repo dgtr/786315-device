@@ -218,6 +218,11 @@ ul {
   color: #000000;
 }
 
+.info-about a.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  display:
+}
+
 
 .main-footer a {
   color: #ffffff;
@@ -590,6 +595,21 @@ ul {
 
 }
 
+.info-about .button:hover::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -23px;
+  z-index: -1;
+
+  width: 260px;
+  height: 41px;
+
+  background-color: #f0c52e;
+
+}
+
+
 .info-about .contacts .button::before {
   left: -43px;
 
@@ -696,4 +716,26 @@ top: 14px;
 left: -514px;
 
 
+}
+
+.context-menu-items {
+  visibility: hidden;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #464646;
+  text-transform: none;
+
+  background-color: #f7e296;
+  /* display:flex; */
+  width: 300px;
+  height: 150px;
+
+
+
+}
+
+.catalog-goods:hover .context-menu-items {
+  visibility: visible;
 }
