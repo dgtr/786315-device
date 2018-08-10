@@ -191,7 +191,7 @@ ul {
   color: rgba(0, 0, 0, 1);
 }
 
-.info-about h3 {
+.info-about h3, {
   font-weight: 800;
   font-size: 47px;
   /* line-height: 48px; */
@@ -748,4 +748,163 @@ ul {
 
 .context-menu-items li {
   margin-left: 60px;
+}
+
+.slider {
+  width: 1160px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.slider-item {
+  display: flex;
+  margin-top: 60px;
+}
+
+.slide-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  font-family: "gilroyextrabold", sans-serif;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 71px;
+  z-index: 100;
+}
+
+.slide-number {
+  position: absolute;
+  top: 215px;
+  left: 1270px;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 179px;
+  font-family: "gilroyextrabold", sans-serif;
+  color: #ffffff;
+  z-index: 10;
+
+}
+
+.slider-list::before {
+  content: "";
+  position: absolute;
+  top: 175px;
+  left: 372px;
+
+  width: 1160px;
+  height: 163px;
+  background-color: #f7e296;
+  z-index: -1;
+
+}
+
+.slider-list {
+  padding: 0;
+  margin: 0;
+}
+
+.slider-text {
+  padding: 0;
+  margin-left: 70px;
+}
+
+.slide-button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroyextrabold", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: 45px;
+  position: relative;
+}
+
+
+
+
+.slide-table td {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "gilroy", sans-serif;
+  color: #000000;
+  padding-right: 75px;
+
+}
+
+.slide-text {
+  margin-top: 22px;
+  margin-bottom: 47px;
+  padding: 0;
+  padding-right: 80px;
+}
+
+.slide-table {
+  margin-top: 52px;
+}
+
+.slide-button::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -41px;
+  z-index: -1;
+
+  width: 220px;
+  height: 8px;
+
+  background-color: #f0c52e;
+}
+
+.slide-button:hover::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -41px;
+  z-index: -1;
+
+  width: 220px;
+  height: 41px;
+
+  background-color: #f0c52e;
+}
+.slide-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 22px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.slider-controls {
+  position: absolute;
+  top: 556px;
+  left: 1370px;;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+ .slide {
+  display: none;
+}
+
+#product-1:checked ~ .slider-list #slide1,
+#product-2:checked ~ .slider-list #slide2,
+#product-3:checked ~ .slider-list #slide3 {
+  display: flex;
 }
