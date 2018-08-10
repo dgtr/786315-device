@@ -908,3 +908,9 @@ ul {
 #product-3:checked ~ .slider-list #slide3 {
   display: flex;
 }
+
+#product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"],
+#product-3:checked ~ .slider-controls label[for="product-3"] {
+  background-color: #000000;
+}
