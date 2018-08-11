@@ -754,6 +754,7 @@ ul {
   width: 1160px;
   padding: 0;
   margin: 0 auto;
+  position: relative;
 }
 
 .slider-item {
@@ -762,6 +763,7 @@ ul {
 }
 
 .slide-title {
+  position: relative;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
@@ -775,32 +777,36 @@ ul {
 
 .slide-number {
   position: absolute;
-  top: 215px;
-  left: 1270px;
+  top: -20px;
+  left: 923px;
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
   font-family: "gilroyextrabold", sans-serif;
   color: #ffffff;
-  z-index: 10;
 
 }
 
 .slider-list::before {
   content: "";
   position: absolute;
-  top: 175px;
-  left: 372px;
+  top: -60px;
+  left: 0px;
 
   width: 1160px;
   height: 163px;
   background-color: #f7e296;
   z-index: -1;
 
+  margin: 0 auto;
+
 }
 
 .slider-list {
+  position: relative;
+
   padding: 0;
+
   margin: 0;
 }
 
@@ -892,8 +898,8 @@ ul {
 
 .slider-controls {
   position: absolute;
-  top: 556px;
-  left: 1370px;;
+  top: 328px;
+  left: 970px;;
   z-index: 20;
 
   font-size: 0;
