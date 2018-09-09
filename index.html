@@ -8,16 +8,16 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
+    <main>
+      <h1 class="visually-hidden">Интернет магазин гаджетов &laquo;Девайс&raquo;</h1>
     <header class="main-header">
       <a class="logo" aria-label="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет магазина гаджетов &laquo;Девайс&raquo;">
       </a>
       <div class="additional-navigation-wrapper">
         <form class="search-text" action="https://echo.htmlacademy.ru" method="post">
-
             <label class="search" for="search-text">Поиск по сайту</label>
             <input id="search-text" type="text" name="search-text" value="" placeholder="Поиск по сайту">
-
         </form>
         <ul class="autorisation">
           <li>
@@ -160,8 +160,6 @@
         </li>
       </ul>
     </section>
-    <main>
-      <h1 class="visually-hidden">Интернет магазин гаджетов &laquo;Девайс&raquo;</h1>
       <section class="popular container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
@@ -197,29 +195,16 @@
           </li>
         </ul>
       </section>
-      <section class="services">
-        <div class="container">
+      <section class="slider-services">
         <h2 class="visually-hidden">Наши услуги</h2>
-        <div class="services-navigation">
-          <ul class="services-list">
-            <li class="delivery">
-              <button type="button" class="button">
-                доставка
-              </button>
-            </li>
-            <li class="guarantee">
-              <button type="button" class="button">
-                гарантия
-              </button>
-            </li>
-            <li class="credit">
-              <button type="button" class="button">
-                кредит
-              </button>
-            </li>
+        <div class="container">
+        <div class="slider-services-controls">
+          <label for="service-1">Доставка</label>
+          <label for="service-2">Гарантия</label>
+          <label for="service-3">Кредит</label>
         </div>
-        <div class="services-content">
-          <div class="delivery">
+        <ul class="services-content">
+          <li class="slider-services-item slide-services" id="slide-services-1">
             <h3>
               Доставка
             </h3>
@@ -228,29 +213,28 @@
               прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
-          </div>
-          <div class="guarantee">
+          </li>
+          <li class="slider-services-item slide-services" id="slide-services-2">
             <h3>
               Гарантия
             </h3>
             <p>
-              Текст про гарантию. Текст про гарантию. Текст про гарантию.
-              Текст про гарантию. Текст про гарантию. Текст про гарантию.
-              Текст про гарантию. Текст про гарантию. Текст про гарантию.
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+               мы выдадим вам новый. Товар, не дом, конечно же.
             </p>
-          </div>
-          <div class="credit">
+          </li>
+          <li class="slider-services-item slide-services" id="slide-services-3">
             <h3>
               Кредит
             </h3>
             <p>
-              Текст про кредит. Текст про кредит. Текст про кредит.
-              Текст про кредит. Текст про кредит. Текст про кредит.
-              Текст про кредит. Текст про кредит. Текст про кредит.
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут
+              для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
+    </div>
       </section>
       <section class="info-about container">
         <h2 class="visually-hidden">Информация о нас</h2>
