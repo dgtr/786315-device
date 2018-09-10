@@ -1098,6 +1098,8 @@ ul {
 .slider-services {
   width: 100%;
   background-color: #e5e2e2;
+  margin-top: 100px;
+
 }
 .slider-services-controls label {
    font-weight: 800;
@@ -1133,6 +1135,9 @@ ul {
   width: 280px;
   flex-direction: column;
   justify-content: flex-start;
+  position: absolute;
+  top: 1000px;
+  left: 300px;
 }
 
 .services-content {
@@ -1141,6 +1146,7 @@ ul {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  margin-left: 300px;
 }
 
 .services-content::before {
@@ -1189,4 +1195,14 @@ ul {
   background-repeat: no-repeat;
   background-position: 0 0;
 
+}
+
+.slide-services {
+  display: none;
+}
+
+#service-1:checked ~ .services-content #slide-services-1,
+#service-2:checked ~ .services-content #slide-services-2,
+#service-3:checked ~ .services-content #slide-services-3 {
+  display: block;
 }
