@@ -1456,6 +1456,7 @@ ul {
 }
 
 .modal-write-us {
+  display: none;
   width: 800px;
   padding: 80px;
   top: 100px;
@@ -1538,6 +1539,7 @@ ul {
   text-indent: 0;
   min-height: 48px;
   margin-bottom: 32px;
+  box-sizing: border-box;
 }
 
 textarea.write-us-input {
@@ -1563,7 +1565,7 @@ textarea.write-us-input {
 .write-us-form button::before {
   content: "";
   position: absolute;
-  top: 440px;
+  top: 435px;
   left: 100px;
   z-index: -1;
 
@@ -1581,4 +1583,31 @@ textarea.write-us-input {
 
 .write-us-form button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.write-us-input:hover {
+  background-color: #e3dfdf;
+}
+
+.write-us-input:focus {
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #f8e296;
+  outline: none;
+}
+
+.modal-map {
+  display: none;
+  top: 120px;
+  left: 50%;
+
+  width: 960px;
+  height: 559px;
+  margin-left: -480px;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
 }
